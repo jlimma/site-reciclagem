@@ -703,3 +703,93 @@ header {
     }
 }
 
+/*icones reajuste*/
+
+.social-links{
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.social-links a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a i {
+    font-size: 1.8rem;
+}
+/*em celular*/
+
+@media(max-width:768px){
+    .social-links{
+        gap: 20px;
+    }
+    .social-links a{
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-links a i {
+        font-size: 1.4rem;
+    }
+}
+
+/* rodapé */
+
+.footer-custom {
+    background-color: #003053;
+    border-top: 1px solid #e0e0e0;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.footer-custom p {
+    font-size: 0.65rem !important;
+    /* Força o tamanho pequeno */
+    color: #6c757d !important;
+    margin-bottom: 0 !important;
+    line-height: 1.4 !important;
+}
+
+.footer-custom a {
+    color: #1674d2 !important;
+    text-decoration: none !important;
+    font-size: 0.65rem !important;
+    /* Força nos links também */
+}
+
+.footer-custom a:hover {
+    color: #1674d2 !important;
+    text-decoration: underline !important;
+}
+
+.footer-custom i {
+    margin-right: 4px;
+    font-size: 0.7rem !important;
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    .footer-custom p {
+        font-size: 0.55rem !important;
+    }
+
+    .footer-custom a {
+        font-size: 0.55rem !important;
+    }
+
+    .footer-custom {
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+}
+
